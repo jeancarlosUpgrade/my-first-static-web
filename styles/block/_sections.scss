@@ -1,0 +1,171 @@
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white-primary;
+  text-transform: uppercase;
+  flex-direction: column;
+
+  /*@include mobile{
+    height:100vh;
+  }
+  @include tablet{
+    height:100vh;
+  }
+  @include  desktop{
+    height:100vh;
+  }*/
+
+
+}
+
+h1.title {
+  //color: #484848;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 7px;
+  cursor: pointer;
+  @include mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    span {
+      font-size: 13px;
+      transition: 0.5s linear;
+      &:nth-child(1):hover {
+        margin: 2px;
+        //margin-right: 10px;
+        &::after {
+          content: "avascript";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(2):hover {
+        margin: 2px;
+        //margin-right: 10px;
+        &::after {
+          content: "nérgico";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(3):hover {
+        margin: 2px;
+        //margin-right: 10px;
+        &::after {
+          content: "ngular";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(4):hover {
+        margin: 2px;
+        //margin-right: 10px;
+        &::after {
+          content: "ode";
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    span {
+      font-size: 30px;
+      transition: 0.5s linear;
+      &:nth-child(1):hover {
+        margin: 20px;
+        //margin-right: 10px;
+        &::after {
+          content: "avascript";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(2):hover {
+        margin: 20px;
+        //margin-right: 10px;
+        &::after {
+          content: "nérgico";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(3):hover {
+        margin: 20px;
+        //margin-right: 10px;
+        &::after {
+          content: "ngular";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(4):hover {
+        margin: 20px;
+        //margin-right: 10px;
+        &::after {
+          content: "ode";
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    span {
+      font-size: 50px;
+      transition: 0.5s linear;
+      &:nth-child(1):hover {
+        margin: 100px;
+        //margin-right: 10px;
+        &::after {
+          content: "avascript";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(2):hover {
+        margin: 100px;
+        //margin-right: 10px;
+        &::after {
+          content: "nérgico";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(3):hover {
+        margin: 100px;
+        //margin-right: 10px;
+        &::after {
+          content: "ngular";
+          text-transform: lowercase;
+        }
+      }
+      &:nth-child(4):hover {
+        margin: 100px;
+        //margin-right: 10px;
+        &::after {
+          content: "ode";
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+}
+
+.avatar {
+  display: flex;
+  width: 200px;
+  box-shadow: rgba(226, 202, 202, 0.4) 0px 2px 4px,
+    rgba(255, 255, 255, 0.3) 0px 7px 13px -3px,
+    rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+}
+
+.caption {
+  margin-top: 50px;
+  text-align: center;
+}
